@@ -1,5 +1,8 @@
 package com.lazymining.mobile.Service;
 
+import android.content.res.Resources;
+
+import com.lazymining.mobile.R;
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
 import com.loopj.android.http.RequestParams;
@@ -14,7 +17,7 @@ import cz.msebera.android.httpclient.Header;
 
 public class ApiService {
 
-    public static String BASE_URL = "http://localhost/api";
+    public static String BASE_URL = Resources.getSystem().getString(R.string.api_url);
 
     public static String GET_MINER_URL = BASE_URL + "/miners";
     public static String LOGIN_URL =  BASE_URL + "/login";
