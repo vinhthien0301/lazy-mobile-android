@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/fragment_manage_list_item_background"
+    app:mode="same_level"
+    app:dragEdge="right">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_restart"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:text="Restart"
+            />
+        <TextView
+            android:id="@+id/txt_delete"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="10px"
+            android:background="@android:color/holo_red_light"
+            android:textColor="@android:color/white"
+            android:text="Delete"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/ln_warning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+            android:clickable="false"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <TextView
+                android:id="@+id/txt_name_warning"
+                style="@style/fragment_manage_list_item_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên máy đào - (1 VGA)"/>
+            <TextView
+                style="@style/fragment_manage_list_item_white"
+                android:id="@+id/txt_ip_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27.75.54.187 (local: 192.168.0.8)"/>
+            <TextView
+                style="@style/fragment_manage_list_item_white"
+                android:id="@+id/txt_message_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CLAYMORE chưa khởi động"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+            android:clickable="false"
+            android:orientation="vertical"
+            android:visibility="visible">
+            <TextView
+                android:id="@+id/txt_name_error"
+                style="@style/fragment_manage_list_item_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên máy đào - (1 VGA)"/>
+            <TextView
+                style="@style/fragment_manage_list_item_white"
+                android:id="@+id/txt_ip_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27.75.54.187 (local: 192.168.0.8)"/>
+            <TextView
+                style="@style/fragment_manage_list_item_white"
+                android:id="@+id/txt_message_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Máy đào đã bị tắt"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+            android:clickable="false"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_name"
+                style="@style/fragment_manage_list_item_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên máy đào - (1 VGA)"/>
+            <TextView
+                style="@style/fragment_manage_list_item_white"
+                android:id="@+id/txt_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27.75.54.187 (local: 192.168.0.8)"/>
+            <LinearLayout
+                android:id="@+id/ln_speed"
+                android:layout_marginTop="15px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/fragment_manage_list_item_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tổng tốc độ: "/>
+                <TextView
+                    android:id="@+id/txt_speed"
+                    android:layout_marginLeft="10px"
+                    android:textColor="@color/text_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="8px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ln_share"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/fragment_manage_list_item_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shares / Reject :"/>
+                <TextView
+                    android:id="@+id/txt_share"
+                    android:layout_marginLeft="10px"
+                    android:textColor="@color/text_green"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+                <TextView
+                    style="@style/fragment_manage_list_item_white"
+                    android:layout_marginLeft="5px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"/>
+                <TextView
+                    android:id="@+id/txt_reject"
+                    android:layout_marginLeft="10px"
+                    android:layout_width="wrap_content"
+                    android:textColor="@android:color/holo_red_light"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_time_work"
+                android:layout_marginTop="8px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/fragment_manage_list_item_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hoạt động liên tục:"/>
+                <TextView
+                    android:id="@+id/txt_work_time"
+                    android:layout_marginLeft="10px"
+                    android:textColor="@color/text_blue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ln_mine_hole"
+                android:layout_marginTop="8px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/fragment_manage_list_item_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hố đào:"/>
+                <TextView
+                    android:id="@+id/txt_mine_hole"
+                    android:layout_marginLeft="10px"
+                    android:textColor="@color/text_blue"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="asdsadas"/>
+            </LinearLayout>
+            <TextView
+                style="@style/fragment_manage_list_item_white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8px"
+                android:text="Nhiệt độ và tốc độ quạt:"/>
+            <TextView
+                android:id="@+id/tvGPUs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8px"
+                android:textColor="@color/text_pink"
+                android:maxLines="30"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+

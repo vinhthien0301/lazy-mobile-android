@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "354526764716",
+    "firebase_url": "https://fir-aed04.firebaseio.com",
+    "project_id": "fir-aed04",
+    "storage_bucket": "fir-aed04.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354526764716:android:893de440a1685d02",
+        "android_client_info": {
+          "package_name": "com.thien.vinh.lazymining"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "354526764716-i0pqo5fn8qvmhdcl3j3s082il8q3bjg1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTiPoFKBwbiySk0acfw3tPVOAhmhUoBk4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:354526764716:android:93c77199d6c4d51e",
+        "android_client_info": {
+          "package_name": "com.lazymining.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "354526764716-i0pqo5fn8qvmhdcl3j3s082il8q3bjg1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTiPoFKBwbiySk0acfw3tPVOAhmhUoBk4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

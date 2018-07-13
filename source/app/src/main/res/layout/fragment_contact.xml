@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/manage_fragment_main_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_contact"
+                android:textSize="@dimen/text_font_size_medium_large"
+                android:layout_centerInParent="true"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10px"
+            android:gravity="center_vertical"
+            android:background="@color/colorWhite">
+            <ImageView
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:src="@drawable/logo_ori"/>
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_font_size_medium"
+                android:text="LAZY MINING - PHIÊN BẢN "/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+            android:textSize="@dimen/text_font_size_small_medium"
+            style="@style/fragment_manage_list_item_white"
+            android:text="@string/feedback_mailbox"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="30px"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20px"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="Email: "
+                    android:textSize="@dimen/text_font_size_medium"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv_email"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:text="vinh.thien0301@gmail.com"
+                    android:textSize="@dimen/text_font_size_medium"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@android:color/darker_gray"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20px"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="Facebook: "
+                    android:textSize="@dimen/text_font_size_medium"/>
+                <TextView
+                    android:id="@+id/tv_facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/holo_blue_light"
+                    android:text="Lazy Mining"
+                    android:textSize="@dimen/text_font_size_medium"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_signout"
+        android:layout_marginBottom="100px"
+        android:textColor="@color/colorWhite"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btn_signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40px"
+        android:background="@drawable/button_state"
+        android:text="@string/sign_out_text"/>
+
+</RelativeLayout>
